@@ -62,6 +62,13 @@ if [ "$1" = "import" ]; then
 
     # Create indexes
     sudo -u postgres psql -d gis -f indexes.sql
+    
+    # Import SRTM contour lines
+    eio clip -o srtm_30m.tif --bounds 5.85 45.65 10.74 48.00
+    gdal_contour -i 10 -a height srtm_30m.tif srtm_30m_contours_10m
+    cd srtm_30m_contours_10m
+    shp2pgsql -p -I -g way -s 4326:900913 contour.shp contour | sudo -u postgres psql -d gis
+    cd ..
 
     # Register that data has changed for mod_tile caching purposes
     touch /var/lib/mod_tile/planet-import-complete
