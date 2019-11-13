@@ -72,6 +72,7 @@ RUN apt-get update \
   osmium-tool \
   cron \
   python3-psycopg2 python3-shapely python3-lxml \
+  python-pip \
 && apt-get clean autoclean \
 && apt-get autoremove --yes \
 && rm -rf /var/lib/{apt,dpkg,cache,log}/
