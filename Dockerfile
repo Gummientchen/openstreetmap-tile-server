@@ -78,6 +78,7 @@ RUN apt-get update \
 && rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 # Install elevation for Python
+RUN pip install --upgrade setuptools
 RUN pip install elevation
 
 # Set up PostGIS
