@@ -77,6 +77,9 @@ RUN apt-get update \
 && apt-get autoremove --yes \
 && rm -rf /var/lib/{apt,dpkg,cache,log}/
 
+# Install elevation for Python
+RUN pip install elevation
+
 # Set up PostGIS
 RUN wget http://download.osgeo.org/postgis/source/postgis-3.0.0rc2.tar.gz
 RUN tar -xvzf postgis-3.0.0rc2.tar.gz
