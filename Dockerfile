@@ -73,6 +73,7 @@ RUN apt-get update \
   cron \
   python3-psycopg2 python3-shapely python3-lxml \
   python-pip \
+  curl \
 && apt-get clean autoclean \
 && apt-get autoremove --yes \
 && rm -rf /var/lib/{apt,dpkg,cache,log}/
