@@ -64,8 +64,8 @@ if [ "$1" = "import" ]; then
     sudo -u postgres psql -d gis -f indexes.sql
     
     # Import SRTM contour lines
-    eio clip -o srtm_30m.tif --bounds 7.51 46.58 8.33 46.86
-    gdal_contour -i 10 -a height srtm_30m.tif srtm_30m_contours_10m
+    # eio clip -o srtm_30m.tif --bounds 7.51 46.58 8.33 46.86
+    gdal_contour -i 10 -a height srtm.tif srtm_30m_contours_10m
     cd srtm_30m_contours_10m
     shp2pgsql -p -I -g way -s 4326:900913 contour.shp contour | sudo -u renderer psql -d gis
     shp2pgsql -a -g way -s 4326:900913 contour.shp contour | sudo -u renderer psql -d gis
