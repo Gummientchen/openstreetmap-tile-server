@@ -1,0 +1,128 @@
+<VRTDataset rasterXSize="18001" rasterYSize="10801">
+  <SRS>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform>  5.9998611111111115e+00,  2.7777777777777778e-04,  0.0000000000000000e+00,  4.8000138888888891e+01,  0.0000000000000000e+00, -2.7777777777777778e-04</GeoTransform>
+  <VRTRasterBand dataType="Int16" band="1">
+    <NoDataValue>-32768</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N45E006.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="0" yOff="7200" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N45E007.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="3600" yOff="7200" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N45E008.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="7200" yOff="7200" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N45E009.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="10800" yOff="7200" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N45E010.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="14400" yOff="7200" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N46E006.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="0" yOff="3600" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N46E007.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="3600" yOff="3600" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N46E008.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="7200" yOff="3600" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N46E009.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="10800" yOff="3600" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N46E010.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="14400" yOff="3600" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N47E006.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N47E007.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="3600" yOff="0" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N47E008.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="7200" yOff="0" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N47E009.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="10800" yOff="0" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">N47E010.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3601" RasterYSize="3601" DataType="Int16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="3601" ySize="3601" />
+      <DstRect xOff="14400" yOff="0" xSize="3601" ySize="3601" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
