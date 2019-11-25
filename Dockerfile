@@ -182,6 +182,8 @@ RUN cd ~/src \
 
 # Start running
 USER root
+# test
+RUN uname
 COPY run.sh /
 COPY indexes.sql /
 ENTRYPOINT ["/run.sh"]
