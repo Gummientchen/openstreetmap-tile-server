@@ -186,6 +186,7 @@ USER root
 RUN uname
 COPY run.sh /
 COPY indexes.sql /
+COPY srtm.tif /
 ENTRYPOINT ["/run.sh"]
 CMD []
 
