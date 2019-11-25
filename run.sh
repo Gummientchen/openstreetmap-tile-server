@@ -94,6 +94,10 @@ if [ "$1" = "run" ]; then
     # Clean /tmp
     rm -rf /tmp/*
 
+    # copy hiillshade data
+    sudo -u renderer mkdir /home/renderer/src/openstreetmap-carto/srtm
+    sudo -u renderer cp /srtm/* /home/renderer/src/openstreetmap-carto/srtm/
+
     # Fix postgres data privileges
     chown postgres:postgres /var/lib/postgresql -R
 
