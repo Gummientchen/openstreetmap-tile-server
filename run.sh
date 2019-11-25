@@ -65,18 +65,22 @@ if [ "$1" = "import" ]; then
     
     # Import SRTM contour lines
     # eio clip -o srtm_30m.tif --bounds 7.51 46.58 8.33 46.86
+    wget -c https://brienznet.ch/download/switzerland.tif -O srtm.tif
     gdal_contour -i 10 -a height srtm.tif srtm_30m_contours_10m
     cd srtm_30m_contours_10m
     shp2pgsql -p -I -g way -s 4326:900913 contour.shp contour | sudo -u renderer psql -d gis
     shp2pgsql -a -g way -s 4326:900913 contour.shp contour | sudo -u renderer psql -d gis
     cd ..
-    gdal_translate -of GTiff -co "TILED=YES" -a_srs "+proj=latlong" srtm.tif srtm_adapted.tif
-    gdalwarp -of GTiff -co "TILED=YES" -srcnodata 32767 -t_srs "+proj=merc +ellps=sphere +R=6378137 +a=6378137 +units=m" -rcs -order 3 -tr 30 30 -multi srtm_adapted.tif srtm_adapted_warped.tif
-    gdaldem srtm_adapted_warped.tif hillshade.tif -z 2
+    # gdal_translate -of GTiff -co "TILED=YES" -a_srs "+proj=latlong" srtm.tif srtm_adapted.tif
+    # gdalwarp -of GTiff -co "TILED=YES" -srcnodata 32767 -t_srs "+proj=merc +ellps=sphere +R=6378137 +a=6378137 +units=m" -rcs -order 3 -tr 30 30 -multi srtm_adapted.tif srtm_adapted_warped.tif
+    # gdaldem srtm_adapted_warped.tif hillshade.tif -z 2
     
-    rm srtm.tif
-    rm srtm_adapted.tif
-    rm srtm_adapted_warped.tif
+    # rm srtm.tif
+    # rm srtm_adapted.tif
+    # rm srtm_adapted_warped.tif
+
+    sudo -u renderer mkdir /home/renderer/src/openstreetmap-carto/srtm
+    sudo -u renderer cp /srtm/* /home/renderer/src/openstreetmap-carto/srtm/
 
     # Register that data has changed for mod_tile caching purposes
     touch /var/lib/mod_tile/planet-import-complete
